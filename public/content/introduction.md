@@ -41,15 +41,15 @@ If you are having trouble uploading, a full trouble shooting guide can be found 
 <a id="running"></a>
 ### Running a PyMata program
 
-The PyMata module can be installed on python3  with `pip3 install pymata-aio ` already been installed when you installed this guide, so any code examples you create within the node-ardx directory will run.
+The PyMata module can be installed on python3  with `pip3 install pymata-aio` already been installed when you installed this guide, so any code examples you create within the node-ardx directory will run.
 
 Run code examples from the terminal e.g.
 
-`python3  code/CIRC01-code-led-a-strobe.js`
+`python3  code/CIRC01-code-led.py`
 
 ## License
     
-The source code is available from https://github.com/AnnaGerber/node-ardx
+The source code is available from https://github.com/lachlanc/py-ardx
 
 This work is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License
 

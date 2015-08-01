@@ -1,4 +1,4 @@
-node-ardx
+py-ardx
 =========
 
 Arduino Experimentors Guide adapted for PyMATA
