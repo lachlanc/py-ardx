@@ -7,7 +7,7 @@ See the [Python 3 documentation](https://docs.python.org/3/) and the <a href="ht
 
 ## Variable assignment
 
-    foo = 0;
+    foo = 0
 
 ## Types
 
@@ -18,18 +18,16 @@ See the [Python 3 documentation](https://docs.python.org/3/) and the <a href="ht
     myList = [1,2,3]
     myDictionary = {MyField : "Some value" , MyKey : 42}
     # Object instantiation using new
-    var myDate = new Date();
-
 ## Operators
 
 Numeric operators include + (addition) - (subtraction) / (division) * (multiplication) % (modulo)
 
-    x = 4;
-    x = x + 1; # x is 5
-    y = x % 2; # y is 1
-    x+=1; # x is 6
-    x-=1; # x is 5
-    x += 3; # x is 8
+    x = 4
+    x = x + 1 # x is 5
+    y = x % 2 # y is 1
+    x+=1 # x is 6
+    x-=1 # x is 5
+    x += 3 # x is 8
     print "The value of x is " + x
 
 
@@ -63,7 +61,7 @@ The latter just imports the sqrt function from the math library
     
 ## Writing to the console
 
-    print("Hello World");
+    print("Hello World")
 
 ## Conditional Behaviour
 
@@ -73,7 +71,7 @@ Use comparison operators < (less than) > (greater than) <= (less than or equal) 
 		print("x is bigger than 0")
     else:
 	    print("x is NOT bigger than 0")
-    }
+    
 
 ## Loops
 
@@ -86,15 +84,15 @@ Use comparison operators < (less than) > (greater than) <= (less than or equal) 
 returns 4 3 2 1
 
 	i=0
-    while (x < 10) {
-    	print(x)
+    while (x < 10):
+        	print(x)
     	i+=1
-    }
+
 
 ## Functions
 
     def myIncrementFunction(x):
-    	return x + 1
+        	return x + 1
 
 ## Calling functions
 
