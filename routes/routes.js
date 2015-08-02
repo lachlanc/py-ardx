@@ -5,7 +5,7 @@ exports.intro = function(req, res){
 	markedejs.renderFile('public/content/introduction.md', {}, function(err, html){
 		res.render('layout',
 		{
-			title: 'Arduino Experimenter\'s Guide for NodeJS',
+			title: 'Arduino Experimenter\'s Guide for Python',
 			subtitle: '',
 			exercises: exercises,
 			isExercise: false,

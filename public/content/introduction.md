@@ -3,9 +3,9 @@
 
 pyBots are Arduino-based robots that are controlled by [Python](http://Python.org/).
 
-This guide will step you through assembling and programming a number of projects using an Arduino-compatible microcontroller and Python, to help you get started building your own NodeBots. This guide has been designed to be used with the Arduino Experimenter's Kit, which is available from several suppliers, including SparkFun, AdaFruit, SEEED Studio and Freetronics.
+This guide will step you through assembling and programming a number of projects using an Arduino-compatible microcontroller and Python. This guide has been designed to be used with the Arduino Experimenter's Kit, which is available from several suppliers, including SparkFun, AdaFruit, SEEED Studio and Freetronics.
 
-The overall goal of the this guide is fun. Beyond this, the aim is to get you comfortable using node.js to control a wide range of electronic components through small, simple and easy circuits. The focus is to get each circuit working then to give you the tools to figure out how it works and how to extend it.
+The overall goal of the this guide is fun. Beyond this, the aim is to get you comfortable using Python to control a wide range of electronic components through small, simple and easy circuits. The focus is to get each circuit working then to give you the tools to figure out how it works and how to extend it.
 
 ![ARDX](/images/ARDX-cover.jpg "ARDX")
 
@@ -13,7 +13,7 @@ The overall goal of the this guide is fun. Beyond this, the aim is to get you co
 <a id="openhardware"></a>
 ## ABOUT OPEN SOURCE HARDWARE
 
-This guide has been adapted by [Anna Gerber](https://github.com/AnnaGerber) and [other members of the NodeBots community](https://github.com/AnnaGerber/node-ardx/graphs/contributors) from the SparkFun version of .:oomlout:.'s ARDX (Arduino Experimenter's) Guide.
+This guide has been adapted from [Anna Gerber's](https://github.com/AnnaGerber) [http://node-ardx.org] (http://node-ardx.org) and [other members of the NodeBots community](https://github.com/AnnaGerber/node-ardx/graphs/contributors) from the SparkFun version of .:oomlout:.'s ARDX (Arduino Experimenter's) Guide.
 
 All of .:oomlout:.'s projects are open source. What does this mean? It means that all of the materials that make up the ARDX kit, including this guide, circuit diagrams and code are available for free download. But it goes further: you're also free to reproduce and modify any of this material, then distribute it for yourself. This is possible because this guide is released under a Creative Commons (CC-BY-SA) license. If you reproduce or modify this guide you must credit SparkFun and .:oomlout:. in your design and share your developments in a similar manner. Why? We grew up learning and playing with open source software and the experience was good fun. We think it would be lovely if a similar experience was possible with physical things.
 

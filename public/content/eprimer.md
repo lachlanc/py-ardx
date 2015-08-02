@@ -10,8 +10,8 @@ For an introduction to what an Arduino is, visit http://arduino.cc/en/Guide/Home
 Used for prototyping circuits
 
 ### Things to watch out for:
-The points in each row are connected horizontally
-
+The points in each row are connected horizontally. 
+The 2 long Vertical columns down each side are also connected and are used for commonly used things like Vcc (Supply voltage) and GND.
 
 <hr/>
 <a id="resistor"></a>
@@ -19,7 +19,7 @@ The points in each row are connected horizontally
 ![Resistor](../images/parts/RES-102.jpg "Resistor")
 
 ### What it Does:
-Restricts the amount of current that can flow through a circuit.
+Restricts the amount of current that can flow through a circuit. This restriction is dictated by ohms law `V=IR`
 ### No. of Leads:
 2
 ### Identifying:
@@ -40,13 +40,13 @@ http://ardx.org/RESI
 ## Diode
 ![Diode](../images/parts/DIOD-01.jpg "Diode")
 ### What it Does:
-The electronic equivalent of a one way valve. Allowing current to flow in one direction but not the other.
+The electronic equivalent of a one way valve. Allowing current to flow in one direction but not the other. Has a voltage drop typically 0.7V
 ### No. of Leads:
 2
 ### Identifying:
 Usually a cylinder with wires extending from either end (and an off center line indicating polarity).
 ### Things to watch out for:
-Will only work in one direction (current will flow if end with the line is connected to ground)
+Will only work in one direction (current will flow if end with the line is connected to the less positive voltage )
 ### More Details:
 http://ardx.org/DIOD
 ### Exercises
@@ -90,10 +90,9 @@ Looks like a regular LED, but with extra leads
 ### Things to watch out for:
 There are two common form factors, bulb style (where the common lead is the second lead and is the longest), and Pirahna or UFO form factor (pictured - insert these into the breadboard on the diagonal).
 
-There are two types of RGB LED, Common Anode and Common Cathode. For Common Anode, connect the common lead to 5V. For Common Cathode, connect the common lead to ground. The three other leads are for R, G and B signal. This guide assumes that you are using a Common Cathode RGB LED.
+There are two types of RGB LED, Common Anode and Common Cathode. For Common Anode, connect the common lead to the positive supply (5V). For Common Cathode, connect the common lead to ground. The three other leads are for R, G and B signal. This guide assumes that you are using a Common Cathode RGB LED.
 ### Exercises
 [12](/exercises/12)
-
 
 <hr/>
 <a id="transistor"></a>
@@ -124,7 +123,7 @@ Takes a timed pulse and converts it into an angular position of the output shaft
 ### Identifying:
 A plastic box with 3 wires coming out one side and a shaft with a plastic horn out the top.
 ### Things to watch out for:
-The plug is not polarized so make sure it is plugged in the right way.
+The plug is not keyed so can be plugged in the wrong way.
 
 ### More Details:
 http://ardx.org/SERV
@@ -154,7 +153,8 @@ http://ardx.org/MOTO
 ## Piezo Element
 ![Piezo](../images/parts/PIEZO.jpg "Piezo")
 ### What it Does:
-A pulse of current will cause it to click. A stream of pulses will cause it to emit a tone.
+A pulse of current will cause it to click. A stream of pulses will cause it to emit a tone. 
+Also can be used as a knock detector as a piezo detector produces a voltage when compressed.
 ### No. of Leads:
 2
 ### Identifying:
@@ -179,7 +179,7 @@ Packages any range of complicated electronics inside an easy to use package.
 ### Identifying:
 The part ID is written on the outside of the package (this sometimes requires a lot of light or a magnifying glass to read).
 ### Things to watch out for:
-Proper orientation (look for marks showing pin 1)
+Proper orientation (look for marks showing pin 1). Normally shown on data sheet, common markings include a notch at top of package or a indented dot.
 
 ### More Details:
 http://ardx.org/ICIC
@@ -198,7 +198,7 @@ Completes a circuit when it is pressed.
 ### Identifying:
 A little square with leads out the bottom and a button on the top.
 ### Things to watch out for:
-These are almost square so can be inserted 90 degrees off angle.
+These are almost square so can be inserted 90 degrees off angle which will make it appear always pressed. 
 
 ### More Details:
 http://ardx.org/BUTT
@@ -212,13 +212,13 @@ http://ardx.org/BUTT
 ![Potentiometer](../images/parts/POT-103-A.jpg "Potentiometer")
 
 ### What it Does:
-Produces a variable resistance dependant on the angular position of the shaft.
+Produces a variable resistance dependant on the angular position of the shaft. 
 ### No. of Leads:
 3
 ### Identifying:
 They can be packaged in many different form factors, look for a dial to identify.
 ### Things to watch out for:
-Accidentally buying logarithmic scale.
+Accidentally buying logarithmic scale. 
 
 ### More Details:
 http://ardx.org/POTE

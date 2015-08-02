@@ -2,7 +2,7 @@
 
 No previous coding experience is required to work through the exercises in this guide. This primer summarises some of the basics of the Python language that we will use to program our Arduinos and should be used more as a reference than a learning source . 
 
-See the [MDN JavaScript Reference](https:#developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) and <a href="https:#github.com/rwaldron/johnny-five">Johnny-Five</a> docs for more detail.
+See the [Python 3 documentation](https://docs.python.org/3/) and the <a href="https://github.com/MrYsLab/pymata-aio/wiki">Pymata</a> docs for more detail.
 
 
 ## Variable assignment
@@ -10,7 +10,7 @@ See the [MDN JavaScript Reference](https:#developer.mozilla.org/en-US/docs/Web/J
     foo = 0;
 
 ## Types
-# need to change to more pythonic variable names 
+
     myInt = 42
     myFloat = 3.1415
     myBoolean = True
@@ -41,7 +41,7 @@ The `type` operator returns the type
 
 Include a library in a python program
 
-    import Pyfirmata
+    import Pymata3
 	from math import sqrt
 	
 The latter just imports the sqrt function from the math library 
@@ -58,12 +58,12 @@ The latter just imports the sqrt function from the math library
 
 ## Comments
 
-    # Comment until the end of the line
+    # this is a comment until the end of the line
 
     
 ## Writing to the console
 
-    console.log("Hello World");
+    print("Hello World");
 
 ## Conditional Behaviour
 
@@ -71,7 +71,6 @@ Use comparison operators < (less than) > (greater than) <= (less than or equal) 
 
     if x > 0:
 		print("x is bigger than 0")
-	    
     else:
 	    print("x is NOT bigger than 0")
     }
@@ -80,13 +79,13 @@ Use comparison operators < (less than) > (greater than) <= (less than or equal) 
 
     for i in range (0,10):
     	print(i)
-    
 	i=[4,3,2,1]
     for j in i:
-    	print j,;
+    	print (j,end=" "s)
 
 returns 4 3 2 1
 
+	i=0
     while (x < 10) {
     	print(x)
     	i+=1
@@ -96,39 +95,30 @@ returns 4 3 2 1
 
     def myIncrementFunction(x):
     	return x + 1
-    
 
 ## Calling functions
 
     myIncrementFunction(1000)
+    
 returns 1001
 
 Functions defined as part of an Object are known as methods, and can be called as follows:
+
 	import time 
 	import calender
-	
     time.gmtime()
 	calendar.timegm(time.gmtime()) # return time in seconds since unix epoch 
-#put link here 
-## Exception handling
 
+## Exception and File handling 
 
- try:
-        f = open(arg, 'r')          # try to do something
-    except IOError:
-        print 'cannot open', arg  # handle errors
-    else:
-        print arg, 'has', len(f.readlines()), 'lines'
-        f.close()
-    finally:   # this block is executed regardless of whether there was an exception
-        print 'Goodbye, world!'
+	try:
+			f = open(arg, 'r')          # try to do something
+		except IOError:
+			print 'cannot open', arg  # handle errors
+	else:
+			print arg, 'has', len(f.readlines()), 'lines'
+			f.close()
+	finally:   # this block is executed regardless of whether there was an exception
+			print 'Goodbye, world!'
 
-## Handling events
-#how do you do this in python ? 
-Use `on` to attach a callback function that will be executed whenever the event occurs:
-
-    var myBoard = new five.Board();
-    myBoard.on("ready", function() {
-    	# code to be executed when the board is ready
-    });
 

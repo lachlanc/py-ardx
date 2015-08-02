@@ -79,9 +79,6 @@ It's easy to accidentally misplace a wire without noticing. Pulling everything o
 <a id="extending"></a>
 ## Extending the Code
 
-### Disabling code using comments
-At the end of the program you will see two lines commented out (the `//` at the front of the lines disables those lines). These represent an alternative behaviour (all LEDs turn on once and then off). Uncomment these lines and comment out the final two lines of the program using `//` to switch the behaviour of the program.
-
 ### Extra animations
 Bored of the default animation? Try modifying the timing of the `oneAfterAnother` function, or write your own animation function.
 
