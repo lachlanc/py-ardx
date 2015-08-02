@@ -34,8 +34,11 @@ Assembly video: http://ardx.org/VIDE02
 
 You can find this code in `code/CIRC02-code-8led.py`
 
+
 	from pymata_aio.pymata3 import PyMata3
 	from pymata_aio.constants import Constants
+	
+	
 	def oneAfterAnother():
 		"""
 		Set digital pins 2 through 8 as a output and make it turn on one at a time
@@ -52,8 +55,10 @@ You can find this code in `code/CIRC02-code-8led.py`
 		for i in LED_PINS:
 			board.digital_write(i,0)
 			board.sleep(0.2)
+	
 		# reset the board and exit
 		board.shutdown()
+	
 	
 	if __name__ == "__main__":
 		oneAfterAnother()
@@ -81,9 +86,6 @@ It's easy to accidentally misplace a wire without noticing. Pulling everything o
 
 ### Extra animations
 Bored of the default animation? Try modifying the timing of the `oneAfterAnother` function, or write your own animation function.
-
-### Confused?
-Don't worry! This exercise is about exploring what is possible so there is a lot going on here. We'll take a step back to simpler code for the next couple of exercises.
 
 <a id="more"></a>
 ## More

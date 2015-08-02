@@ -41,4 +41,4 @@ def relay_onoff():
 
 
 if __name__ == "__main__":
-    pin_13_flash()
+    relay_onoff()

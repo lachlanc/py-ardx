@@ -20,7 +20,7 @@ from pymata_aio.constants import Constants
 
 def pin_9_motor():
     """
-    Set digital pin 13 as a output and make it turn on
+    Set digital pin 9 as a output and make it turn on
     @return:
     """
     # instantiate the pymata_core API
@@ -40,4 +40,4 @@ def pin_9_motor():
     board.shutdown()
 
 if __name__ == "__main__":
-    pin_13_flash()
+    pin_9_motor()

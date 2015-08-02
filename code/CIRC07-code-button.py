@@ -2,7 +2,7 @@
 
 
 """
-This example illustrates manipulating a servo motor.
+This example illustrates manipulating a button motor.
 """
 
 from pymata_aio.pymata3 import PyMata3

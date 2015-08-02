@@ -2,7 +2,6 @@
 """
 This example illustrates reading an analog temperature sensor .
 """
-
 from pymata_aio.pymata3 import PyMata3
 from pymata_aio.constants import Constants
 # instantiate PyMata with a 2 second start up delay to allow an Uno to complete its reset
@@ -22,7 +21,7 @@ for x in range(0, 3):
     # and 0 is min voltage (Ov)
     
     # NEED TO ADD CONVERSION HERE 
-    cel=((raw * 0.4882814) - 50) #TMP36 conversion to Celsius THIS DOESN'T WORK
+    cel=((raw * 0.4882814) - 50) #TMP36 conversion to Celsius 
     print ("temperature is",cel,"C")
     #print ("temperature is", ((5.0 * raw * 100.0)/1024.0),"C"); # LM35 temp sensor
     board.sleep(3)

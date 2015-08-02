@@ -36,7 +36,7 @@ def pin_6_pwm_128():
     board.analog_write(LED_PIN_PWM, 50)
     board.digital_write(LED_PIN,1)
     board.sleep(1)
-    board.analog_write(LED_PIN_PWM,254)
+    board.analog_write(LED_PIN_PWM,4)
     board.sleep(1)
     board.analog_write(LED_PIN_PWM,200)
 

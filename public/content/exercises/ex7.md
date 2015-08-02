@@ -32,7 +32,9 @@ Assembly video: http://ardx.org/VIDE07
 
 You can find this code in `code/CIRC-07-code-button.py`
 
-
+	"""
+	This example illustrates manipulating a button motor.
+	"""
 	
 	from pymata_aio.pymata3 import PyMata3
 	from pymata_aio.constants import Constants
@@ -58,35 +60,19 @@ You can find this code in `code/CIRC-07-code-button.py`
 	# close the interface down cleanly
 	board.shutdown()
 	
+	
 <a id="troubleshooting"></a>
 ## Troubleshooting
 
 ### Light Not Turning On
 The pushbutton is square and because of this it is easy to put it in the wrong way. Rotate it 90 degrees and see if it starts working.
 
-### Light Not Fading
-A bit of a silly mistake we constantly made, when you switch from simple on off to fading remember to move the LED wire from pin 13 to pin 9.
-
 ### Underwhelmed?
 No worries these circuits are all super stripped down to make playing with the components easy, but once you throw them together the sky is the limit.
 
 <a id="extending"></a>
 ## Extending the Code
-
-### On button off button:
-The initial example may be a little underwhelming (we don't really need an Arduino to do this), so let’s make it a little more complicated. One button will turn the LED on the other will turn the LED off. Add the following to the code:
-
-	offButton = new five.Button(3);
-	offButton.on("down", function(){
-	    led.off();
-	});
-
-You can find this code in `code/CIRC-07-code-button.js`
-
-### Fading up and down
-Let's use the buttons to control an analog signal. To do this
-you will need to change the wire connecting the LED from pin
-13 to pin 9, also change the code to use the fadeIn and fadeOut methods. These methods take a parameter that controls the speed of the fade.
+You can use the latching functions of pymata to capture a button press even when your not looking
 
 <a id="more"></a>
 ## More

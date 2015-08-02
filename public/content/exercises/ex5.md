@@ -23,30 +23,9 @@ Assembly video: http://ardx.org/VIDE05
 <a id="code"></a>
 ## Code
 
-You can find this code in `code/CIRC-05-code-shiftregister.js`
+You can't find this code in `code/CIRC-05-code-shiftregister.py`
 
-	var five = require("johnny-five"),
-	    board, shiftRegister;
-	board = new five.Board();
-	board.on("ready", function() {
-	  shiftRegister = new five.ShiftRegister({
-	    pins: {
-	      data: 2,
-	      clock: 3,
-	      latch: 4
-	    }
-	  });
-	  var value = 0;
-	  function next() {
-	    value = value > 0x11 ? value >> 1 : 0x88;
-	    shiftRegister.send( value );
-	    setTimeout(next, 300);
-	  }
-	  this.repl.inject({
-	    sr: shiftRegister
-	  });
-	  next();
-	});
+	not complete sorry 
 
 <a id="troubleshooting"></a>
 ## Troubleshooting

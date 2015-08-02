@@ -35,33 +35,34 @@ Assembly video: http://ardx.org/VIDE01
 
 You can find this code in `CIRC-01-code-led.py`
 
-        from pymata_aio.pymata3 import PyMata3
-        from pymata_aio.constants import Constants
-
-
-    def pin_13_flash():
-        """
-        Set digital pin 13 as a output and make it turn on
-        @return:
-        """
-        # instantiate the pymata_core API
-        board = PyMata3()
-        LED_PIN=13
-        # set the pin mode
-        board.set_pin_mode(LED_PIN, Constants.OUTPUT)
-        board.digital_write(LED_PIN,1)
-        board.sleep(1)
-        board.digital_write(LED_PIN,0)
-        board.sleep(1)
-        board.digital_write(LED_PIN,1)
-       # wait for 5 seconds to see the LED lit
-        board.sleep(3)
-    
-        # reset the board and exit
-        board.shutdown()
-    if __name__ == "__main__":
-        pin_13_flash()
-
+	from pymata_aio.pymata3 import PyMata3
+	from pymata_aio.constants import Constants
+	
+	
+	def pin_13_flash():
+		"""
+		Set digital pin 13 as a output and make it turn on
+		@return:
+		"""
+		# instantiate the pymata_core API
+		board = PyMata3()
+		LED_PIN=13
+		# set the pin mode
+		board.set_pin_mode(LED_PIN, Constants.OUTPUT)
+		board.digital_write(LED_PIN,1)
+		board.sleep(1)
+		board.digital_write(LED_PIN,0)
+		board.sleep(1)
+		board.digital_write(LED_PIN,1)
+	# wait for 5 seconds to see the LED lit
+		board.sleep(3)
+	
+		# reset the board and exit
+		board.shutdown()
+	
+	
+	if __name__ == "__main__":
+		pin_13_flash()
 <a id="troubleshooting"></a>
 ## Troubleshooting
 
